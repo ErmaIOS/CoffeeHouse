@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC30A0FE2BC43AD0002D3E14 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0FD2BC43AD0002D3E14 /* Constants.swift */; };
+		AC30A1002BC43B80002D3E14 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0FF2BC43B80002D3E14 /* NetworkLayer.swift */; };
+		AC30A1022BC45DDE002D3E14 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A1012BC45DDE002D3E14 /* Products.swift */; };
 		AC40C9CC2BB98CD20045CD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CB2BB98CD20045CD1A /* AppDelegate.swift */; };
 		AC40C9CE2BB98CD20045CD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CD2BB98CD20045CD1A /* SceneDelegate.swift */; };
 		AC40C9D02BB98CD20045CD1A /* UserAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CF2BB98CD20045CD1A /* UserAuthorizationViewController.swift */; };
@@ -14,11 +17,10 @@
 		AC40C9D82BB98CD50045CD1A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC40C9D72BB98CD50045CD1A /* Base */; };
 		AC40C9E42BB9CFEB0045CD1A /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9E32BB9CFEB0045CD1A /* UserSessionManager.swift */; };
 		AC40C9E62BB9D04F0045CD1A /* UserAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9E52BB9D04F0045CD1A /* UserAuthorizationView.swift */; };
-		AC40C9E92BB9D41B0045CD1A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC40C9E82BB9D41B0045CD1A /* SnapKit */; };
 		AC4C086B2BBFF73D00F9FEB5 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C086A2BBFF73D00F9FEB5 /* ProductModel.swift */; };
 		AC4C086D2BBFF96800F9FEB5 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4C086C2BBFF96800F9FEB5 /* JSONParser.swift */; };
 		AC4C086E2BC006EC00F9FEB5 /* Product.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4C08692BBFF59A00F9FEB5 /* Product.json */; };
-		AC504CF72BC176D10038DAD7 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC504CF62BC176D10038DAD7 /* DescriptionViewController.swift */; };
+		AC504CF72BC176D10038DAD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC504CF62BC176D10038DAD7 /* DetailViewController.swift */; };
 		AC504CF92BC17B510038DAD7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC504CF82BC17B510038DAD7 /* Model.swift */; };
 		AC6AEAB92BBBF7D1008E058A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEAB82BBBF7D1008E058A /* SplashView.swift */; };
 		AC6AEABB2BBBFF51008E058A /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */; };
@@ -32,13 +34,22 @@
 		ACA8B3D02BBEFF0E00918E5A /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3CF2BBEFF0E00918E5A /* ProductCell.swift */; };
 		ACA8B3D22BBF04E800918E5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3D12BBF04E800918E5A /* MainViewController.swift */; };
 		ACA8B3D52BBF112800918E5A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3D42BBF112800918E5A /* UIColor.swift */; };
+		ACC0B7B92BC91DCA004FBCD1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0B7B82BC91DCA004FBCD1 /* AuthService.swift */; };
+		ACC0B7BB2BC925D8004FBCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACC0B7BA2BC925D8004FBCD1 /* GoogleService-Info.plist */; };
+		ACC0B7BD2BC94CDC004FBCD1 /* AuthorizationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */; };
 		ACC815352BBB39E60077640E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC815342BBB39E60077640E /* User.swift */; };
 		ACC815372BBB47250077640E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC815362BBB47250077640E /* UserViewController.swift */; };
 		ACFD8B962BBD6740009DD2B2 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */; };
+		EF327B22CD78739CD2078ACE /* Pods_CoffeeHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A2038871B9373B4EE0EF18 /* Pods_CoffeeHouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC40C9C82BB98CD20045CD1A /* MyStoreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStoreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D4B5396F84C025A95080AED /* Pods-CoffeeHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeHouse.release.xcconfig"; path = "Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse.release.xcconfig"; sourceTree = "<group>"; };
+		82A2038871B9373B4EE0EF18 /* Pods_CoffeeHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC30A0FD2BC43AD0002D3E14 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC30A0FF2BC43B80002D3E14 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		AC30A1012BC45DDE002D3E14 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		AC40C9C82BB98CD20045CD1A /* CoffeeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC40C9CB2BB98CD20045CD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC40C9CD2BB98CD20045CD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC40C9CF2BB98CD20045CD1A /* UserAuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +61,7 @@
 		AC4C08692BBFF59A00F9FEB5 /* Product.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Product.json; sourceTree = "<group>"; };
 		AC4C086A2BBFF73D00F9FEB5 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		AC4C086C2BBFF96800F9FEB5 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		AC504CF62BC176D10038DAD7 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		AC504CF62BC176D10038DAD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AC504CF82BC17B510038DAD7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC6AEAB82BBBF7D1008E058A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
@@ -64,9 +75,13 @@
 		ACA8B3CF2BBEFF0E00918E5A /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		ACA8B3D12BBF04E800918E5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACA8B3D42BBF112800918E5A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		ACC0B7B82BC91DCA004FBCD1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		ACC0B7BA2BC925D8004FBCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCodeView.swift; sourceTree = "<group>"; };
 		ACC815342BBB39E60077640E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACC815362BBB47250077640E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		F4EFF57F03DB8CB58115AEE0 /* Pods-CoffeeHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeHouse.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,30 +89,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC40C9E92BB9D41B0045CD1A /* SnapKit in Frameworks */,
+				EF327B22CD78739CD2078ACE /* Pods_CoffeeHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31814F8EF2EBDF4CBC44867D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4EFF57F03DB8CB58115AEE0 /* Pods-CoffeeHouse.debug.xcconfig */,
+				6D4B5396F84C025A95080AED /* Pods-CoffeeHouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC40C9BF2BB98CD20045CD1A = {
 			isa = PBXGroup;
 			children = (
-				AC40C9CA2BB98CD20045CD1A /* MyStoreProject */,
+				AC40C9CA2BB98CD20045CD1A /* CoffeeHouse */,
 				AC40C9C92BB98CD20045CD1A /* Products */,
+				31814F8EF2EBDF4CBC44867D /* Pods */,
+				E30D54ADA2CB3DABD3FAE1A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AC40C9C92BB98CD20045CD1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC40C9C82BB98CD20045CD1A /* MyStoreProject.app */,
+				AC40C9C82BB98CD20045CD1A /* CoffeeHouse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC40C9CA2BB98CD20045CD1A /* MyStoreProject */ = {
+		AC40C9CA2BB98CD20045CD1A /* CoffeeHouse */ = {
 			isa = PBXGroup;
 			children = (
 				ACA8B3D32BBF110000918E5A /* UIColor */,
@@ -107,7 +133,7 @@
 				AC40C9E02BB98D160045CD1A /* Resource */,
 				AC40C9D92BB98CD50045CD1A /* Info.plist */,
 			);
-			path = MyStoreProject;
+			path = CoffeeHouse;
 			sourceTree = "<group>";
 		};
 		AC40C9DF2BB98D030045CD1A /* App */ = {
@@ -122,6 +148,7 @@
 		AC40C9E02BB98D160045CD1A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				ACC0B7BA2BC925D8004FBCD1 /* GoogleService-Info.plist */,
 				AC40C9D42BB98CD50045CD1A /* Assets.xcassets */,
 				AC40C9D62BB98CD50045CD1A /* LaunchScreen.storyboard */,
 			);
@@ -153,13 +180,27 @@
 				AC4C08692BBFF59A00F9FEB5 /* Product.json */,
 				AC4C086A2BBFF73D00F9FEB5 /* ProductModel.swift */,
 				AC4C086C2BBFF96800F9FEB5 /* JSONParser.swift */,
+				AC30A0FD2BC43AD0002D3E14 /* Constants.swift */,
+				AC30A1012BC45DDE002D3E14 /* Products.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		AC6407C22BC82937009D45C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC30A0FF2BC43B80002D3E14 /* NetworkLayer.swift */,
+				ACC0B7B82BC91DCA004FBCD1 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		AC6AEAB02BBBF577008E058A /* WorkFlow */ = {
 			isa = PBXGroup;
 			children = (
+				AC6407C22BC82937009D45C6 /* Services */,
+				AC4C08672BBFF30300F9FEB5 /* DTO */,
+				AC6FE6D92BBF49F900230010 /* TabBar */,
 				AC6AEAB22BBBF70F008E058A /* Main Page */,
 				AC6AEAB12BBBF5A0008E058A /* Registration and Authorization */,
 			);
@@ -179,11 +220,9 @@
 		AC6AEAB22BBBF70F008E058A /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
-				AC4C08672BBFF30300F9FEB5 /* DTO */,
-				AC6FE6D92BBF49F900230010 /* TabBar */,
 				ACA8B3CE2BBEFDFD00918E5A /* Cells */,
 				ACA8B3D12BBF04E800918E5A /* MainViewController.swift */,
-				AC504CF62BC176D10038DAD7 /* DescriptionViewController.swift */,
+				AC504CF62BC176D10038DAD7 /* DetailViewController.swift */,
 			);
 			path = "Main Page";
 			sourceTree = "<group>";
@@ -193,6 +232,7 @@
 			children = (
 				AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */,
 				ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */,
+				ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -252,27 +292,36 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
+		E30D54ADA2CB3DABD3FAE1A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82A2038871B9373B4EE0EF18 /* Pods_CoffeeHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC40C9C72BB98CD20045CD1A /* MyStoreProject */ = {
+		AC40C9C72BB98CD20045CD1A /* CoffeeHouse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC40C9DC2BB98CD50045CD1A /* Build configuration list for PBXNativeTarget "MyStoreProject" */;
+			buildConfigurationList = AC40C9DC2BB98CD50045CD1A /* Build configuration list for PBXNativeTarget "CoffeeHouse" */;
 			buildPhases = (
+				921FA2FA5AEBF26FFC7DB271 /* [CP] Check Pods Manifest.lock */,
 				AC40C9C42BB98CD20045CD1A /* Sources */,
 				AC40C9C52BB98CD20045CD1A /* Frameworks */,
 				AC40C9C62BB98CD20045CD1A /* Resources */,
+				922C468B016D4B2A2936F36B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyStoreProject;
+			name = CoffeeHouse;
 			packageProductDependencies = (
-				AC40C9E82BB9D41B0045CD1A /* SnapKit */,
 			);
 			productName = MyStoreProject;
-			productReference = AC40C9C82BB98CD20045CD1A /* MyStoreProject.app */;
+			productReference = AC40C9C82BB98CD20045CD1A /* CoffeeHouse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -290,7 +339,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC40C9C32BB98CD20045CD1A /* Build configuration list for PBXProject "MyStoreProject" */;
+			buildConfigurationList = AC40C9C32BB98CD20045CD1A /* Build configuration list for PBXProject "CoffeeHouse" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,13 +349,12 @@
 			);
 			mainGroup = AC40C9BF2BB98CD20045CD1A;
 			packageReferences = (
-				AC40C9E72BB9D41B0045CD1A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = AC40C9C92BB98CD20045CD1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC40C9C72BB98CD20045CD1A /* MyStoreProject */,
+				AC40C9C72BB98CD20045CD1A /* CoffeeHouse */,
 			);
 		};
 /* End PBXProject section */
@@ -318,17 +366,62 @@
 			files = (
 				AC40C9D52BB98CD50045CD1A /* Assets.xcassets in Resources */,
 				AC4C086E2BC006EC00F9FEB5 /* Product.json in Resources */,
+				ACC0B7BB2BC925D8004FBCD1 /* GoogleService-Info.plist in Resources */,
 				AC40C9D82BB98CD50045CD1A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		921FA2FA5AEBF26FFC7DB271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoffeeHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922C468B016D4B2A2936F36B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC40C9C42BB98CD20045CD1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30A1022BC45DDE002D3E14 /* Products.swift in Sources */,
+				AC30A0FE2BC43AD0002D3E14 /* Constants.swift in Sources */,
 				ACFD8B962BBD6740009DD2B2 /* AuthorizationViewController.swift in Sources */,
 				AC6FE6DB2BBF4B4900230010 /* ShoppingCartViewController.swift in Sources */,
 				AC6FE6DF2BBF4B6900230010 /* UserProfileViewController.swift in Sources */,
@@ -344,6 +437,7 @@
 				AC40C9CC2BB98CD20045CD1A /* AppDelegate.swift in Sources */,
 				AC6FE6E12BBF4BD600230010 /* TabBarController.swift in Sources */,
 				AC4C086D2BBFF96800F9FEB5 /* JSONParser.swift in Sources */,
+				AC30A1002BC43B80002D3E14 /* NetworkLayer.swift in Sources */,
 				AC504CF92BC17B510038DAD7 /* Model.swift in Sources */,
 				AC6FE6DD2BBF4B5900230010 /* NavigationViewController.swift in Sources */,
 				ACA8B3D22BBF04E800918E5A /* MainViewController.swift in Sources */,
@@ -351,8 +445,10 @@
 				AC40C9E62BB9D04F0045CD1A /* UserAuthorizationView.swift in Sources */,
 				AC40C9CE2BB98CD20045CD1A /* SceneDelegate.swift in Sources */,
 				AC4C086B2BBFF73D00F9FEB5 /* ProductModel.swift in Sources */,
-				AC504CF72BC176D10038DAD7 /* DescriptionViewController.swift in Sources */,
+				ACC0B7BD2BC94CDC004FBCD1 /* AuthorizationCodeView.swift in Sources */,
+				AC504CF72BC176D10038DAD7 /* DetailViewController.swift in Sources */,
 				ACA8B3D02BBEFF0E00918E5A /* ProductCell.swift in Sources */,
+				ACC0B7B92BC91DCA004FBCD1 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,13 +587,15 @@
 		};
 		AC40C9DD2BB98CD50045CD1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EFF57F03DB8CB58115AEE0 /* Pods-CoffeeHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyStoreProject/Info.plist;
+				INFOPLIST_FILE = CoffeeHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -508,7 +606,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.erma.MyStoreProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erma.CoffeHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -518,13 +616,15 @@
 		};
 		AC40C9DE2BB98CD50045CD1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D4B5396F84C025A95080AED /* Pods-CoffeeHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyStoreProject/Info.plist;
+				INFOPLIST_FILE = CoffeeHouse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -535,7 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.erma.MyStoreProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erma.CoffeHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -546,7 +646,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC40C9C32BB98CD20045CD1A /* Build configuration list for PBXProject "MyStoreProject" */ = {
+		AC40C9C32BB98CD20045CD1A /* Build configuration list for PBXProject "CoffeeHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC40C9DA2BB98CD50045CD1A /* Debug */,
@@ -555,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC40C9DC2BB98CD50045CD1A /* Build configuration list for PBXNativeTarget "MyStoreProject" */ = {
+		AC40C9DC2BB98CD50045CD1A /* Build configuration list for PBXNativeTarget "CoffeeHouse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC40C9DD2BB98CD50045CD1A /* Debug */,
@@ -565,25 +665,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AC40C9E72BB9D41B0045CD1A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AC40C9E82BB9D41B0045CD1A /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC40C9E72BB9D41B0045CD1A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC40C9C02BB98CD20045CD1A /* Project object */;
 }

@@ -23,7 +23,7 @@ class AuthorizationView: UIView {
         return view
     }()
     
-    private let phoneNumberTF: UITextField = {
+     let phoneNumberTF: UITextField = {
         let view = UITextField()
         view.placeholder = "555 555 555"
         view.textColor = .black

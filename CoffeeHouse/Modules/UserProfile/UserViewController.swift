@@ -27,4 +27,6 @@ class UserViewController: UIViewController{
         guard let user = user else { return }
         userProfileView.updateLabels(with: user)
     }
+    
+   
 }

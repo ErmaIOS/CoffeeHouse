@@ -15,5 +15,6 @@ struct Model{
     let image: String
     let title: String
     let description: String
-    let price: String
+    var price: String
 }
+

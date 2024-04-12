@@ -16,8 +16,16 @@ class TabBarController: UITabBarController {
         view.backgroundColor = .white
         confiigureTabs()
         setupMiddleButton()
+        setupNavigationItem()
     }
     
+    private func setupNavigationItem() {
+        navigationItem.title = "Меню"
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(resource: .bellIcon), style: .plain, target: self, action: #selector(bellButtonTapped))
+        
+        rightBarButtonItem.tintColor = .black
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
     
     private func confiigureTabs(){
         let vc1 = MainViewController()
@@ -71,6 +79,9 @@ class TabBarController: UITabBarController {
     @objc
     private func middleButtonTapped(){
         
+    }
+    @objc
+    private func bellButtonTapped(){
     }
     
 

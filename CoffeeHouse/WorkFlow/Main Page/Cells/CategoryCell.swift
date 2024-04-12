@@ -9,7 +9,7 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
     
-    static let reuseId = "menuBar_cell"
+    static let reuseId = "coffeeHouse_cell"
     
     
      let blueView: UIView = {
@@ -22,9 +22,8 @@ class CategoryCell: UICollectionViewCell {
     
      let tabsLabel: UILabel = {
         let view = UILabel()
-        view.text = "Кофе"
         view.font = .systemFont(ofSize: 16)
-         view.textColor = UIColor.init(hex: "#C2C1C3")
+        view.textColor = UIColor.init(hex: "#C2C1C3")
         return view
     }()
     
@@ -48,7 +47,7 @@ class CategoryCell: UICollectionViewCell {
     override var isSelected: Bool {
             didSet {
                 blueView.backgroundColor = isSelected ? UIColor.init(hex: "#283952") : .white
-                tabsLabel.textColor = .white
+                tabsLabel.textColor = isSelected ? .white : UIColor.init(hex: "#C2C1C3")
             }
         }
     
@@ -75,7 +74,7 @@ class CategoryCell: UICollectionViewCell {
         
     }
     
-    func setLabel(_ label: String){
+    func fill(with label: String){
         tabsLabel.text = label
     }
     

@@ -12,7 +12,7 @@ class ProductCell: UICollectionViewCell {
     
     private let ImageView: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(resource: .brauniIcon)
+        view.image = UIImage(named: "cappuccinoIcon")
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 24
         return view
@@ -26,13 +26,6 @@ class ProductCell: UICollectionViewCell {
         return view
     }()
     
-    private let descriptionLabel: UILabel = {
-        let view = UILabel()
-        view.text = "Кофейный напиток"
-        view.font = .systemFont(ofSize: 12)
-        view.textColor = .black
-        return view
-    }()
     
     private let priceLabel: UILabel = {
         let view = UILabel()
@@ -41,6 +34,53 @@ class ProductCell: UICollectionViewCell {
         view.textColor = UIColor.init(hex: "#FF8B5B")
         return view
     }()
+    
+    private let decreaseBtn: UIButton = {
+        let view = UIButton(type: .system)
+        view.setTitle("-", for: .normal)
+        view.setTitleColor(.black, for: .normal)
+        view.titleLabel?.font = .systemFont(ofSize: 20,weight: .bold)
+        view.backgroundColor = UIColor(hex: "#EDEDED")
+        view.layer.cornerRadius = 14
+        
+        return view
+    }()
+    
+    private let countLabel: UILabel = {
+        let view = UILabel()
+        view.font = .systemFont(ofSize: 16,weight: .bold)
+        view.text = "1"
+        view.textColor = .black
+        view.backgroundColor = .white
+        return view
+    }()
+    
+    private let increaseBtn: UIButton = {
+        let view = UIButton(type: .system)
+        view.setTitle("+", for: .normal)
+        view.titleLabel?.font = .systemFont(ofSize: 20,weight: .bold)
+        view.setTitleColor(.white, for: .normal)
+        view.backgroundColor = .orange
+        view.layer.cornerRadius = 14
+        return view
+    }()
+    
+    private let horizontalStackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .horizontal
+        view.distribution = .fill
+        view.spacing = 13
+        view.alignment = .center
+        return view
+    }()
+    
+ //var counter: Int = 1
+    
+    var didDecrease: (() -> Void)?
+    var didIncrease: (() -> Void)?
+    
+    
+  
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -67,32 +107,65 @@ class ProductCell: UICollectionViewCell {
             make.leading.equalTo(ImageView.snp.trailing).offset(16)
         }
         
-        contentView.addSubview(descriptionLabel)
-        descriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(nameLabel.snp.bottom).offset(8)
-            make.leading.equalTo(ImageView.snp.trailing).offset(16)
-        }
         
         contentView.addSubview(priceLabel)
         priceLabel.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
+            make.top.equalTo(nameLabel.snp.bottom).offset(8)
             make.leading.equalTo(ImageView.snp.trailing).offset(16)
         }
+        contentView.addSubview(horizontalStackView)
+        horizontalStackView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(53)
+            make.trailing.equalToSuperview()
+            make.height.equalTo(28)
+        }
+        
+        horizontalStackView.addArrangedSubview(decreaseBtn)
+        horizontalStackView.addArrangedSubview(countLabel)
+        horizontalStackView.addArrangedSubview(increaseBtn)
+        
+        decreaseBtn.addTarget(self,
+                              action: #selector(decreaseBtnTapped),
+                              for: .touchUpInside)
+        
+        increaseBtn.addTarget(self,
+                              action: #selector(increaseBtnTapped),
+                              for: .touchUpInside)
     }
     
     
-    func setLabel(_ image: String,_ name: String,_ description: String,_ price: String){
-        ImageView.image = UIImage(named: image)
-        nameLabel.text = name
-        descriptionLabel.text = description
-        priceLabel.text = price
+    
+    
+    func fill(with model: Product){
+        nameLabel.text = model.strMeal
+        if let url = URL(string: model.strMealThumb) {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        self.ImageView.image = UIImage(data: data)
+                    }
+                }
+            }.resume()
+        }
+        priceLabel.text = "\(model.idMeal) c"
     }
     
-    func fill(with model: ProductModel){
-        ImageView.image = UIImage(named: model.productImage)
-        nameLabel.text = model.productName
-        descriptionLabel.text = model.productDescription
-        priceLabel.text = model.productPrice
+    
+    var counter: Int = 1 {
+        didSet{
+            countLabel.text = "\(counter)"
+        }
     }
+    @objc
+    private func decreaseBtnTapped(){
+       didDecrease?()
+        
+    }
+    @objc
+    private func increaseBtnTapped(){
+        didIncrease?()
+    }
+    
+
     
 }

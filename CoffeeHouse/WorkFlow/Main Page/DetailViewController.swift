@@ -44,8 +44,7 @@ class DetailViewController: UIViewController {
     
     
     var product: Product?
-    private var products: [Product] = []
-    private let networkLayer = NetworkLayer()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,28 +77,28 @@ class DetailViewController: UIViewController {
         imageView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.horizontalEdges.equalToSuperview()
-            make.height.equalTo(225)
+            make.height.equalTo(260)
         }
         
         view.addSubview(nameLabel)
         nameLabel.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).offset(16)
+            make.top.equalTo(imageView.snp.bottom).offset(30)
             make.leading.equalToSuperview().offset(16)
             make.width.equalTo(265)
         }
         
         view.addSubview(priceLabel)
         priceLabel.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).offset(16)
+            make.top.equalTo(imageView.snp.bottom).offset(30)
             make.trailing.equalToSuperview().offset(-16)
         }
         
-        view.addSubview(descriptionLabel)
-        descriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(nameLabel.snp.bottom).offset(14)
-            make.horizontalEdges.equalToSuperview().inset(16)
-        }
-        
+//        view.addSubview(descriptionLabel)
+//        descriptionLabel.snp.makeConstraints { make in
+//            make.top.equalTo(nameLabel.snp.bottom).offset(14)
+//            make.horizontalEdges.equalToSuperview().inset(16)
+//        }
+//        
         
         
     }
