@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2A07302BD1A06700B31AF0 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2A072F2BD1A06700B31AF0 /* Toast.swift */; };
 		AC30A0FE2BC43AD0002D3E14 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0FD2BC43AD0002D3E14 /* Constants.swift */; };
 		AC30A1002BC43B80002D3E14 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A0FF2BC43B80002D3E14 /* NetworkLayer.swift */; };
 		AC30A1022BC45DDE002D3E14 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A1012BC45DDE002D3E14 /* Products.swift */; };
+		AC3880D22BCE66B7004D29A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880D12BCE66B7004D29A3 /* SplashViewController.swift */; };
+		AC3880D42BCE6ADF004D29A3 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880D32BCE6ADF004D29A3 /* PhoneNumberView.swift */; };
+		AC3880D62BCE6B35004D29A3 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880D52BCE6B35004D29A3 /* PhoneNumberViewController.swift */; };
+		AC3880D82BCE71DF004D29A3 /* PhoneNumberCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880D72BCE71DF004D29A3 /* PhoneNumberCodeView.swift */; };
+		AC3880DA2BCE73A3004D29A3 /* PhoneNumberCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880D92BCE73A3004D29A3 /* PhoneNumberCodeViewController.swift */; };
+		AC3880DE2BCE8958004D29A3 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880DD2BCE8958004D29A3 /* EmailView.swift */; };
+		AC3880E02BCE8AAB004D29A3 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3880DF2BCE8AAB004D29A3 /* EmailViewController.swift */; };
 		AC40C9CC2BB98CD20045CD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CB2BB98CD20045CD1A /* AppDelegate.swift */; };
 		AC40C9CE2BB98CD20045CD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CD2BB98CD20045CD1A /* SceneDelegate.swift */; };
 		AC40C9D02BB98CD20045CD1A /* UserAuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40C9CF2BB98CD20045CD1A /* UserAuthorizationViewController.swift */; };
@@ -22,33 +30,40 @@
 		AC4C086E2BC006EC00F9FEB5 /* Product.json in Resources */ = {isa = PBXBuildFile; fileRef = AC4C08692BBFF59A00F9FEB5 /* Product.json */; };
 		AC504CF72BC176D10038DAD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC504CF62BC176D10038DAD7 /* DetailViewController.swift */; };
 		AC504CF92BC17B510038DAD7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC504CF82BC17B510038DAD7 /* Model.swift */; };
-		AC6AEAB92BBBF7D1008E058A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEAB82BBBF7D1008E058A /* SplashView.swift */; };
-		AC6AEABB2BBBFF51008E058A /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */; };
-		AC6AEABD2BBC02AA008E058A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEABC2BBC02AA008E058A /* SplashViewController.swift */; };
+		AC6AEAB92BBBF7D1008E058A /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEAB82BBBF7D1008E058A /* StartView.swift */; };
+		AC6AEABD2BBC02AA008E058A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEABC2BBC02AA008E058A /* StartViewController.swift */; };
 		AC6AEAC12BBC14BB008E058A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEAC02BBC14BB008E058A /* CategoryCell.swift */; };
 		AC6FE6DB2BBF4B4900230010 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE6DA2BBF4B4900230010 /* ShoppingCartViewController.swift */; };
 		AC6FE6DD2BBF4B5900230010 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE6DC2BBF4B5900230010 /* NavigationViewController.swift */; };
 		AC6FE6DF2BBF4B6900230010 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE6DE2BBF4B6900230010 /* UserProfileViewController.swift */; };
 		AC6FE6E12BBF4BD600230010 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE6E02BBF4BD600230010 /* TabBarController.swift */; };
 		AC7127342BBBE15A001FC126 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7127332BBBE15A001FC126 /* UserProfileView.swift */; };
+		AC8BDFD62BC9AB6D00816EBD /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDFD52BC9AB6D00816EBD /* CustomTabBar.swift */; };
+		AC8BDFD82BC9AC1D00816EBD /* QRCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BDFD72BC9AC1D00816EBD /* QRCodeButton.swift */; };
 		ACA8B3D02BBEFF0E00918E5A /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3CF2BBEFF0E00918E5A /* ProductCell.swift */; };
 		ACA8B3D22BBF04E800918E5A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3D12BBF04E800918E5A /* MainViewController.swift */; };
 		ACA8B3D52BBF112800918E5A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8B3D42BBF112800918E5A /* UIColor.swift */; };
 		ACC0B7B92BC91DCA004FBCD1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0B7B82BC91DCA004FBCD1 /* AuthService.swift */; };
 		ACC0B7BB2BC925D8004FBCD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACC0B7BA2BC925D8004FBCD1 /* GoogleService-Info.plist */; };
-		ACC0B7BD2BC94CDC004FBCD1 /* AuthorizationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */; };
 		ACC815352BBB39E60077640E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC815342BBB39E60077640E /* User.swift */; };
 		ACC815372BBB47250077640E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC815362BBB47250077640E /* UserViewController.swift */; };
-		ACFD8B962BBD6740009DD2B2 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */; };
 		EF327B22CD78739CD2078ACE /* Pods_CoffeeHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A2038871B9373B4EE0EF18 /* Pods_CoffeeHouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D4B5396F84C025A95080AED /* Pods-CoffeeHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeHouse.release.xcconfig"; path = "Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse.release.xcconfig"; sourceTree = "<group>"; };
 		82A2038871B9373B4EE0EF18 /* Pods_CoffeeHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2A072F2BD1A06700B31AF0 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		AC30A0FD2BC43AD0002D3E14 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC30A0FF2BC43B80002D3E14 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		AC30A1012BC45DDE002D3E14 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		AC3880D12BCE66B7004D29A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AC3880D32BCE6ADF004D29A3 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		AC3880D52BCE6B35004D29A3 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		AC3880D72BCE71DF004D29A3 /* PhoneNumberCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberCodeView.swift; sourceTree = "<group>"; };
+		AC3880D92BCE73A3004D29A3 /* PhoneNumberCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberCodeViewController.swift; sourceTree = "<group>"; };
+		AC3880DD2BCE8958004D29A3 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		AC3880DF2BCE8AAB004D29A3 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		AC40C9C82BB98CD20045CD1A /* CoffeeHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC40C9CB2BB98CD20045CD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC40C9CD2BB98CD20045CD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,24 +78,23 @@
 		AC4C086C2BBFF96800F9FEB5 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		AC504CF62BC176D10038DAD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AC504CF82BC17B510038DAD7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		AC6AEAB82BBBF7D1008E058A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
-		AC6AEABC2BBC02AA008E058A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AC6AEAB82BBBF7D1008E058A /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		AC6AEABC2BBC02AA008E058A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		AC6AEAC02BBC14BB008E058A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		AC6FE6DA2BBF4B4900230010 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		AC6FE6DC2BBF4B5900230010 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		AC6FE6DE2BBF4B6900230010 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		AC6FE6E02BBF4BD600230010 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AC7127332BBBE15A001FC126 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		AC8BDFD52BC9AB6D00816EBD /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		AC8BDFD72BC9AC1D00816EBD /* QRCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeButton.swift; sourceTree = "<group>"; };
 		ACA8B3CF2BBEFF0E00918E5A /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		ACA8B3D12BBF04E800918E5A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACA8B3D42BBF112800918E5A /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		ACC0B7B82BC91DCA004FBCD1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		ACC0B7BA2BC925D8004FBCD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCodeView.swift; sourceTree = "<group>"; };
 		ACC815342BBB39E60077640E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACC815362BBB47250077640E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		F4EFF57F03DB8CB58115AEE0 /* Pods-CoffeeHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeHouse.debug.xcconfig"; path = "Target Support Files/Pods-CoffeeHouse/Pods-CoffeeHouse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +119,57 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC2A072C2BD19FB600B31AF0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AC2A072E2BD1A05600B31AF0 /* Toast */,
+				AC2A072D2BD1A02100B31AF0 /* UIColor */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AC2A072D2BD1A02100B31AF0 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				ACA8B3D42BBF112800918E5A /* UIColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		AC2A072E2BD1A05600B31AF0 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				AC2A072F2BD1A06700B31AF0 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		AC3880D02BCE66A4004D29A3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AC3880D12BCE66B7004D29A3 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AC3880DB2BCE7DBD004D29A3 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				AC3880DC2BCE7DEF004D29A3 /* Email */,
+				AC6AEAB52BBBF75F008E058A /* PhoneNumber */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		AC3880DC2BCE7DEF004D29A3 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				AC3880DD2BCE8958004D29A3 /* EmailView.swift */,
+				AC3880DF2BCE8AAB004D29A3 /* EmailViewController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
 		AC40C9BF2BB98CD20045CD1A = {
 			isa = PBXGroup;
 			children = (
@@ -126,10 +191,10 @@
 		AC40C9CA2BB98CD20045CD1A /* CoffeeHouse */ = {
 			isa = PBXGroup;
 			children = (
-				ACA8B3D32BBF110000918E5A /* UIColor */,
 				AC40C9DF2BB98D030045CD1A /* App */,
-				AC6AEAB02BBBF577008E058A /* WorkFlow */,
-				AC40C9E12BB98E870045CD1A /* Modules */,
+				AC6AEAB02BBBF577008E058A /* Modules */,
+				AC40C9E12BB98E870045CD1A /* Module */,
+				AC2A072C2BD19FB600B31AF0 /* Helper */,
 				AC40C9E02BB98D160045CD1A /* Resource */,
 				AC40C9D92BB98CD50045CD1A /* Info.plist */,
 			);
@@ -155,13 +220,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		AC40C9E12BB98E870045CD1A /* Modules */ = {
+		AC40C9E12BB98E870045CD1A /* Module */ = {
 			isa = PBXGroup;
 			children = (
 				ACC815332BBB39C70077640E /* UserProfile */,
 				AC40C9E22BB98EEE0045CD1A /* Authorization */,
 			);
-			path = Modules;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		AC40C9E22BB98EEE0045CD1A /* Authorization */ = {
@@ -195,24 +260,25 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		AC6AEAB02BBBF577008E058A /* WorkFlow */ = {
+		AC6AEAB02BBBF577008E058A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC3880D02BCE66A4004D29A3 /* Splash */,
 				AC6407C22BC82937009D45C6 /* Services */,
 				AC4C08672BBFF30300F9FEB5 /* DTO */,
 				AC6FE6D92BBF49F900230010 /* TabBar */,
 				AC6AEAB22BBBF70F008E058A /* Main Page */,
 				AC6AEAB12BBBF5A0008E058A /* Registration and Authorization */,
 			);
-			path = WorkFlow;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		AC6AEAB12BBBF5A0008E058A /* Registration and Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				AC6AEAB72BBBF7A3008E058A /* Splash */,
+				AC6AEAB72BBBF7A3008E058A /* StartScreen */,
 				AC6AEAB62BBBF76E008E058A /* Registration */,
-				AC6AEAB52BBBF75F008E058A /* Authorization */,
+				AC3880DB2BCE7DBD004D29A3 /* Authorization */,
 			);
 			path = "Registration and Authorization";
 			sourceTree = "<group>";
@@ -227,14 +293,15 @@
 			path = "Main Page";
 			sourceTree = "<group>";
 		};
-		AC6AEAB52BBBF75F008E058A /* Authorization */ = {
+		AC6AEAB52BBBF75F008E058A /* PhoneNumber */ = {
 			isa = PBXGroup;
 			children = (
-				AC6AEABA2BBBFF51008E058A /* AuthorizationView.swift */,
-				ACFD8B952BBD6740009DD2B2 /* AuthorizationViewController.swift */,
-				ACC0B7BC2BC94CDC004FBCD1 /* AuthorizationCodeView.swift */,
+				AC3880D32BCE6ADF004D29A3 /* PhoneNumberView.swift */,
+				AC3880D52BCE6B35004D29A3 /* PhoneNumberViewController.swift */,
+				AC3880D72BCE71DF004D29A3 /* PhoneNumberCodeView.swift */,
+				AC3880D92BCE73A3004D29A3 /* PhoneNumberCodeViewController.swift */,
 			);
-			path = Authorization;
+			path = PhoneNumber;
 			sourceTree = "<group>";
 		};
 		AC6AEAB62BBBF76E008E058A /* Registration */ = {
@@ -244,24 +311,34 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
-		AC6AEAB72BBBF7A3008E058A /* Splash */ = {
+		AC6AEAB72BBBF7A3008E058A /* StartScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AC6AEAB82BBBF7D1008E058A /* SplashView.swift */,
-				AC6AEABC2BBC02AA008E058A /* SplashViewController.swift */,
+				AC6AEAB82BBBF7D1008E058A /* StartView.swift */,
+				AC6AEABC2BBC02AA008E058A /* StartViewController.swift */,
 			);
-			path = Splash;
+			path = StartScreen;
 			sourceTree = "<group>";
 		};
 		AC6FE6D92BBF49F900230010 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				AC6FE6E02BBF4BD600230010 /* TabBarController.swift */,
+				AC8BDFD42BC9AB3100816EBD /* CustomTabBar */,
 				AC6FE6DA2BBF4B4900230010 /* ShoppingCartViewController.swift */,
 				AC6FE6DC2BBF4B5900230010 /* NavigationViewController.swift */,
 				AC6FE6DE2BBF4B6900230010 /* UserProfileViewController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AC8BDFD42BC9AB3100816EBD /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AC6FE6E02BBF4BD600230010 /* TabBarController.swift */,
+				AC8BDFD52BC9AB6D00816EBD /* CustomTabBar.swift */,
+				AC8BDFD72BC9AC1D00816EBD /* QRCodeButton.swift */,
+			);
+			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
 		ACA8B3CE2BBEFDFD00918E5A /* Cells */ = {
@@ -272,14 +349,6 @@
 				AC504CF82BC17B510038DAD7 /* Model.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		ACA8B3D32BBF110000918E5A /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				ACA8B3D42BBF112800918E5A /* UIColor.swift */,
-			);
-			path = UIColor;
 			sourceTree = "<group>";
 		};
 		ACC815332BBB39C70077640E /* UserProfile */ = {
@@ -421,34 +490,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC30A1022BC45DDE002D3E14 /* Products.swift in Sources */,
+				AC3880DE2BCE8958004D29A3 /* EmailView.swift in Sources */,
 				AC30A0FE2BC43AD0002D3E14 /* Constants.swift in Sources */,
-				ACFD8B962BBD6740009DD2B2 /* AuthorizationViewController.swift in Sources */,
+				AC3880DA2BCE73A3004D29A3 /* PhoneNumberCodeViewController.swift in Sources */,
 				AC6FE6DB2BBF4B4900230010 /* ShoppingCartViewController.swift in Sources */,
 				AC6FE6DF2BBF4B6900230010 /* UserProfileViewController.swift in Sources */,
-				AC6AEABB2BBBFF51008E058A /* AuthorizationView.swift in Sources */,
 				AC40C9D02BB98CD20045CD1A /* UserAuthorizationViewController.swift in Sources */,
-				AC6AEABD2BBC02AA008E058A /* SplashViewController.swift in Sources */,
+				AC6AEABD2BBC02AA008E058A /* StartViewController.swift in Sources */,
 				AC40C9E42BB9CFEB0045CD1A /* UserSessionManager.swift in Sources */,
 				ACA8B3D52BBF112800918E5A /* UIColor.swift in Sources */,
 				ACC815372BBB47250077640E /* UserViewController.swift in Sources */,
 				AC6AEAC12BBC14BB008E058A /* CategoryCell.swift in Sources */,
 				AC7127342BBBE15A001FC126 /* UserProfileView.swift in Sources */,
+				AC3880D62BCE6B35004D29A3 /* PhoneNumberViewController.swift in Sources */,
 				ACC815352BBB39E60077640E /* User.swift in Sources */,
+				AC3880D82BCE71DF004D29A3 /* PhoneNumberCodeView.swift in Sources */,
 				AC40C9CC2BB98CD20045CD1A /* AppDelegate.swift in Sources */,
+				AC3880D42BCE6ADF004D29A3 /* PhoneNumberView.swift in Sources */,
 				AC6FE6E12BBF4BD600230010 /* TabBarController.swift in Sources */,
+				AC3880E02BCE8AAB004D29A3 /* EmailViewController.swift in Sources */,
+				AC8BDFD62BC9AB6D00816EBD /* CustomTabBar.swift in Sources */,
+				AC8BDFD82BC9AC1D00816EBD /* QRCodeButton.swift in Sources */,
 				AC4C086D2BBFF96800F9FEB5 /* JSONParser.swift in Sources */,
 				AC30A1002BC43B80002D3E14 /* NetworkLayer.swift in Sources */,
 				AC504CF92BC17B510038DAD7 /* Model.swift in Sources */,
+				AC2A07302BD1A06700B31AF0 /* Toast.swift in Sources */,
 				AC6FE6DD2BBF4B5900230010 /* NavigationViewController.swift in Sources */,
 				ACA8B3D22BBF04E800918E5A /* MainViewController.swift in Sources */,
-				AC6AEAB92BBBF7D1008E058A /* SplashView.swift in Sources */,
+				AC6AEAB92BBBF7D1008E058A /* StartView.swift in Sources */,
 				AC40C9E62BB9D04F0045CD1A /* UserAuthorizationView.swift in Sources */,
 				AC40C9CE2BB98CD20045CD1A /* SceneDelegate.swift in Sources */,
 				AC4C086B2BBFF73D00F9FEB5 /* ProductModel.swift in Sources */,
-				ACC0B7BD2BC94CDC004FBCD1 /* AuthorizationCodeView.swift in Sources */,
 				AC504CF72BC176D10038DAD7 /* DetailViewController.swift in Sources */,
 				ACA8B3D02BBEFF0E00918E5A /* ProductCell.swift in Sources */,
 				ACC0B7B92BC91DCA004FBCD1 /* AuthService.swift in Sources */,
+				AC3880D22BCE66B7004D29A3 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

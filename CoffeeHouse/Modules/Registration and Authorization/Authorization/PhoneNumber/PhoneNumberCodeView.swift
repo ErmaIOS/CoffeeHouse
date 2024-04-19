@@ -10,21 +10,25 @@ import SnapKit
 
 class PhoneNumberCodeView: UIView {
 
-    
+   
     let codeTF: UITextField = {
         let view = UITextField()
-        view.placeholder = "Code"
+        view.placeholder = "Enter the Code"
         view.textColor = .black
-        view.backgroundColor = UIColor.systemGray3
+        view.backgroundColor = UIColor.init(hex: "#EDEDED")
         view.layer.cornerRadius = 25
         let leftContainerView = UIView(frame: CGRect(x: 0, y: 0, width: 56, height: 56))
+        let iconImageView = UIImageView(image: UIImage(systemName: "envelope.fill"))
+        iconImageView.tintColor = UIColor.systemGray2
+        iconImageView.frame = CGRect(x: 16, y: 16, width: 35, height: 24)
+        leftContainerView.addSubview(iconImageView)
         view.leftView = leftContainerView
         view.leftViewMode = .always
         return view
     }()
     private let entryBtn: UIButton = {
         let view = UIButton(type: .system)
-        view.setTitle("Войти", for: .normal)
+        view.setTitle("Sign In", for: .normal)
         view.setTitleColor(UIColor.white, for: .normal)
         view.backgroundColor = .orange
         view.layer.cornerRadius = 25
@@ -45,6 +49,13 @@ class PhoneNumberCodeView: UIView {
         
         codeTF.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide).offset(50)
+            make.horizontalEdges.equalToSuperview().inset(16)
+            make.height.equalTo(50)
+        }
+        
+        addSubview(entryBtn)
+        entryBtn.snp.makeConstraints { make in
+            make.top.equalTo(codeTF.snp.bottom).offset(30)
             make.horizontalEdges.equalToSuperview().inset(16)
             make.height.equalTo(50)
         }

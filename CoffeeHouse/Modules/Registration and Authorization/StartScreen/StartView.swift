@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashView: UIView {
+class StartView: UIView {
     private let coffeeHouseIcon: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(resource: .coffeeHouseIcon)
@@ -16,7 +16,7 @@ class SplashView: UIView {
     
     private let authorizationBtn: UIButton = {
         let view = UIButton(type: .system)
-        view.setTitle("Войти", for: .normal)
+        view.setTitle("Sign In", for: .normal)
         view.setTitleColor(UIColor.white, for: .normal)
         view.backgroundColor = .orange
         view.layer.cornerRadius = 25
@@ -27,7 +27,7 @@ class SplashView: UIView {
     private let regisrationBtn: UIButton = {
         let view = UIButton(type: .system)
         view.setTitleColor(UIColor.systemGray3, for: .normal)
-        view.setTitle("Регистрация", for: .normal)
+        view.setTitle("Sign Up", for: .normal)
         view.backgroundColor = .white
         view.layer.cornerRadius = 25
         return view

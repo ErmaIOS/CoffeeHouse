@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct ProductModel: Codable {
-    let productName: String
-    let productDescription: String
-    let productPrice: String
-    let productImage: String
+
+
+struct Productts: Codable {
+    let products: [Productt]
+}
+
+struct Productt: Codable {
+    let title: String
 }

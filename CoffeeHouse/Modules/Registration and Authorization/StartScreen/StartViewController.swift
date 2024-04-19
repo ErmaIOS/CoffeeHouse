@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
-    private let splashView = SplashView(frame: .zero)
+class StartViewController: UIViewController {
+    private let splashView = StartView(frame: .zero)
     
     
     
@@ -20,13 +20,13 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         didTappedBtn()
+        navigationItem.hidesBackButton = true
     }
     
     private func didTappedBtn(){
         splashView.didAuthorizationBtnTapped = {
-            let vc = AuthorizationViewController()
+            let vc = PhoneNumberViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

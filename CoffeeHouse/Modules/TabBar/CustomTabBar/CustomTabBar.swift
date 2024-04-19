@@ -16,6 +16,9 @@ final class CustomTabBar: UITabBar {
         super.init(frame: frame)
         setupQrButton()
         backgroundColor = .systemBackground
+//        itemPositioning = .fill
+//        itemWidth = 50
+//        itemSpacing = 50
     }
     
     required init?(coder: NSCoder) {

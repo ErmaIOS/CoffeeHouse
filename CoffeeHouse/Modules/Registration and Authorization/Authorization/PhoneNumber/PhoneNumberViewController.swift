@@ -10,7 +10,7 @@ import UIKit
 class PhoneNumberViewController: UIViewController {
     private let phoneNumberView = PhoneNumberView(frame: .zero)
     
-    private let authService = AuthService()
+    private let authService = AuthService.shared
     
     override func loadView() {
         super.loadView()
@@ -20,6 +20,7 @@ class PhoneNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         didNextTapped()
+        didGoogleBtnTapped()
     }
     
     
@@ -30,24 +31,30 @@ class PhoneNumberViewController: UIViewController {
         }
     }
     
-    private func sendSms() {
-        guard let text = phoneNumberView.phoneNumberTF.text else { return }
-        authService.sendSmsCode(with: text) { result in
-            switch result {
-            case .success:
-                let vc = PhoneNumberCodeViewController()
-                let navController = UINavigationController(rootViewController: vc)
-                DispatchQueue.main.async {
-                                self.navigationController?.pushViewController(navController, animated: true)
-                            }
-                print("Success")
-            case .failure(let error):
-                print("Failed to send SMS: \(error.localizedDescription)")
-            }
+    private func didGoogleBtnTapped(){
+        phoneNumberView.didGoogleBtnTapped = { [weak self] in
+            guard let self = self else { return }
+            let vc = EmailViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
     
+    
+    private func sendSms() {
+        guard let text = phoneNumberView.phoneNumberTF.text else { return }
+        authService.sendSmsCode(with: text) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success:
+                    let vc = PhoneNumberCodeViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                case .failure(let error):
+                    print("Failed to send SMS: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
     
     
 }

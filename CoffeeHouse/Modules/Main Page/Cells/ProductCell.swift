@@ -12,7 +12,7 @@ class ProductCell: UICollectionViewCell {
     
     private let ImageView: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "cappuccinoIcon")
+        view.image = UIImage(named: "")
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 24
         return view
@@ -20,7 +20,7 @@ class ProductCell: UICollectionViewCell {
     
     private let nameLabel: UILabel = {
         let view = UILabel()
-        view.text = "Капучино"
+        view.text = ""
         view.font = .systemFont(ofSize: 16)
         view.textColor = .black
         return view
@@ -29,7 +29,7 @@ class ProductCell: UICollectionViewCell {
     
     private let priceLabel: UILabel = {
         let view = UILabel()
-        view.text = "140 c"
+        view.text = ""
         view.font = .systemFont(ofSize: 14)
         view.textColor = UIColor.init(hex: "#FF8B5B")
         return view
@@ -74,7 +74,7 @@ class ProductCell: UICollectionViewCell {
         return view
     }()
     
- //var counter: Int = 1
+ 
     
     var didDecrease: (() -> Void)?
     var didIncrease: (() -> Void)?
@@ -134,7 +134,9 @@ class ProductCell: UICollectionViewCell {
     }
     
     
-    
+    func fill2(with model: Productt){
+        nameLabel.text = model.title
+    }
     
     func fill(with model: Product){
         nameLabel.text = model.strMeal

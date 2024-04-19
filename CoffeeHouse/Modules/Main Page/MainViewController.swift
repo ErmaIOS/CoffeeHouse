@@ -11,7 +11,7 @@ import SnapKit
 
 class MainViewController: UIViewController {
     
-    private let horizontalCollectionView: UICollectionView = {
+    private lazy var horizontalCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: 0, height: 0)
         layout.minimumInteritemSpacing = 15
@@ -30,27 +30,57 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    private let verticalCollectionView: UICollectionView = {
+    private lazy var refreshControl: UIRefreshControl = {
+        let view = UIRefreshControl()
+        view.addTarget(self, action: #selector(refreshProducts), for: .valueChanged)
+        view.attributedTitle = NSAttributedString(string: "Loading...")
+        return view
+    }()
+    
+    private lazy var verticalCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = .init(width: UIScreen.main.bounds.width - 32, height: 89)
         layout.minimumLineSpacing = 18
         layout.minimumInteritemSpacing = 0
         layout.sectionInset = .init(top: 0, left: 16, bottom: 0, right: 16)
         layout.scrollDirection = .vertical
+        
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.backgroundColor = .white
         cv.layer.cornerRadius = 24
+        cv.refreshControl = refreshControl
         return cv
     }()
     
-    private var selectedCategoryIndex = 0
+    private let activityIndicator: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.hidesWhenStopped = true
+        view.style = .large
+        return view
+    }()
     
+    
+    
+    private var selectedCategoryIndex = 0
     private var products: [Product] = []
     private var categories: [Category] = []
     private let networkLayer = NetworkLayer()
     private var selectedCategory: Category? {
         didSet{
             fetchProducts(by: selectedCategory!)
+        }
+    }
+    private var isLoading = false {
+        didSet {
+            DispatchQueue.main.async {
+                if self.isLoading{
+                    self.activityIndicator.startAnimating()
+                    self.refreshControl.beginRefreshing()
+                } else {
+                    self.activityIndicator.stopAnimating()
+                    self.refreshControl.endRefreshing()
+                }
+            }
         }
     }
     
@@ -94,6 +124,11 @@ class MainViewController: UIViewController {
             make.horizontalEdges.equalToSuperview()
             make.bottom.equalToSuperview()
         }
+        view.addSubview(activityIndicator)
+        activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(40)
+        }
     }
     
     
@@ -135,7 +170,10 @@ class MainViewController: UIViewController {
     
     
     private func fetchCategories(){
-        networkLayer.fetchCategorys(){ result in
+        isLoading = true
+        networkLayer.fetchCategorys(){ [weak self] result in
+            guard let self else { return }
+            isLoading = false
             switch result {
             case .success(let categories):
                 DispatchQueue.main.async{
@@ -152,7 +190,10 @@ class MainViewController: UIViewController {
     }
     
     private func fetchProducts(by category: Category){
-        networkLayer.fetchProducts(by: category.strCategory){ result in
+        isLoading = true
+        networkLayer.fetchProducts(by: category.strCategory){ [weak self] result in
+            guard let self else { return }
+            isLoading = false
             switch result {
             case .success(let products):
                 DispatchQueue.main.async{
@@ -163,12 +204,19 @@ class MainViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+
     }
     
     
     
     
     
+    @objc
+    private func refreshProducts(){
+        if let selectedCategory{
+            fetchProducts(by: selectedCategory)
+        }
+    }
     
 
     
@@ -242,7 +290,13 @@ extension MainViewController: UICollectionViewDataSource {
                                                           for: indexPath) as? ProductCell
             let product = products[indexPath.row]
             cell?.fill(with: product)
+           
             
+            if activityIndicator.isAnimating {
+                cell?.isUserInteractionEnabled = false
+            } else {
+                cell?.isUserInteractionEnabled = true
+            }
            
           
           
